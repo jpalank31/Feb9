@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>February 9 🥸</title>
+    <style>
+      body {
+        position: relative;
+        margin: 0;
+        height: 100vh; /* Full height of the viewport */
+        background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/156/173/original/footballfield.jpg?1738280762");
+        background-size: cover; /* Cover the entire viewport */
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Prevent the image from repeating */
+        display: flex; /* Flexbox for centering content */
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        text-align: center; /* Center text */
+        flex-direction: column; /* Stack elements vertically */
+      }
+
+      .overlay {
+        position: absolute; /* Overlay covers the entire body */
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(255, 255, 255, 0.5); /* Adjust opacity */
+        z-index: 0; /* Make sure overlay is behind text */
+      }
+
+      h1,
+      h2,
+      p,
+      button {
+        position: relative; /* Bring text in front of the overlay */
+        z-index: 1; /* Ensure text is above overlay */
+        margin: 0;
+      }
+
+      h1 {
+        margin: 20px auto;
+        font-size: 2.5rem; /* Responsive font size */
+      }
+
+      h2 {
+        margin: 10px auto;
+        font-size: 1.75rem; /* Responsive font size */
+      }
+
+      p {
+        font-size: 1.5rem; /* Adjusted for readability */
+        padding: 0 10px; /* Padding for mobile */
+        margin: 20px auto;
+        max-width: 550px;
+      }
+
+      button {
+        padding: 10px 20px; /* Increased padding for touch targets */
+        font-size: 1rem; /* Responsive font size */
+        background-color: black; /* Button background color */
+        color: white;
+        border-radius: 5px; /* Rounded corners */
+        cursor: pointer; /* Pointer cursor */
+        transition: background-color 0.3s; /* Smooth transition */
+        margin-top: 20px; /* Space above button */
+      }
+
+      button:hover {
+        background-color: white;
+        color: black;
+      }
+
+      /* Media Queries for Responsive Design */
+      @media (max-width: 600px) {
+        h1 {
+          font-size: 1.75rem; /* Smaller heading size */
+        }
+        h2 {
+          font-size: 1.5rem; /* Smaller subheading size */
+        }
+        p {
+          font-size: 1.2rem; /* Smaller paragraph text */
+          max-width: 500px;
+        }
+        button {
+          font-size: 0.9rem; /* Smaller button text */
+          padding: 8px 16px; /* Adjust button padding */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="overlay"></div>
+    <h1>✨Sunday, February 9, 2025✨</h1>
+    <h2>Game day in America...and football bet time!</h2>
+    <p>
+      insert bet here
+      <br />
+    </p>
+    <a href="https://jpalank31.github.io/Glimmer1/">
+      <button>Back to homepage</button>
+    </a>
+    <script>
+      history.scrollRestoration = "manual";
+      window.onload = function () {
+        document.body.scrollTop = document.documentElement.scrollTop = 0;
+      };
+    </script>
+  </body>
+</html>
